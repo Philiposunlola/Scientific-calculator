@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+		<title>Scientific Calculator</title>
+	</head>
+
+	<body>
+		<main class="flex">
+			<div class="container">
+				<section class="display flex">
+					<div class="mode">
+						<button class="active-mode" id="deg">DEG</button>
+						<button id="rad">RAD</button>
+					</div>
+					<div class="equation">
+						<input id="input" placeholder="0" readonly />
+					</div>
+					<div class="answer"></div>
+				</section>
+				<section class="buttons grid">
+					<div class="buttons-sub-container grid">
+						<div class="numbers grid">
+							<button id="clear">C</button>
+							<button class="show" value="7">7</button>
+							<button class="show" value="8">8</button>
+							<button class="show" value="9">9</button>
+							<button class="show" value="4">4</button>
+							<button class="show" value="5">5</button>
+							<button class="show" value="6">6</button>
+							<button class="show" value="1">1</button>
+							<button class="show" value="2">2</button>
+							<button class="show" value="3">3</button>
+							<button class="show" value="0">0</button>
+							<button class="show" value=".">.</button>
+							<button id="equal" value="=">=</button>
+						</div>
+						<div class="operators grid">
+							<button id="delete">del</button>
+							<button class="show operator" value="/">÷</button>
+							<button class="show operator" value="*">×</button>
+							<button class="show operator" value="-">-</button>
+							<button class="show operator" value="+">+</button>
+						</div>
+					</div>
+					<div id="scientific" class="scientific grid">
+						<button id="open"> scientific </button>
+						<div class="symbols grid">
+							<button id="inverse">inv</button>
+							<button class="show" value="(">(</button>
+							<button class="show" value=")">)</button>
+							<button class="math-btn trig" value="sin"
+								>sin</button
+							>
+							<button class="math-btn trig" value="cos"
+								>cos</button
+							>
+							<button class="math-btn trig" value="tan"
+								>tan</button
+							>
+							<button class="math-btn" value="sqrt">
+								&radic;</button
+							>
+							<button class="show" value="**"
+								>x<sup><small>y</small></sup></button
+							>
+							<button class="show" id="pi" value="3.142"
+								>pi</button
+							>
+							<button id="ans">ans</button>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="attribution">
+				Made with <span>❤</span> by
+				<a href="https://twitter.com/osunlola_philip" target="_blank"
+					>philipDcoder</a
+				>
+			</div>
+		</main>
+		<script src="main.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
